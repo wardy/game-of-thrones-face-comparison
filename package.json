@@ -1,0 +1,19 @@
+{
+  "name": "microsoft-cognitive-services-playground",
+  "version": "1.0.0",
+  "description": "A playground to test out some of the cognitive services API's provided by microsoft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wardy/microsoft-cognitive-services-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wardy/microsoft-cognitive-services-playground/issues"
+  },
+  "homepage": "https://github.com/wardy/microsoft-cognitive-services-playground#readme"
+}
