@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/wardy/microsoft-cognitive-services-playground/issues"
   },
-  "homepage": "https://github.com/wardy/microsoft-cognitive-services-playground#readme"
+  "homepage": "https://github.com/wardy/microsoft-cognitive-services-playground#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "browserify": "^13.0.1",
+    "watchify": "^3.7.0"
+  }
 }
