@@ -1,4 +1,4 @@
-import faceApiService from './face-api-service/faceApiService';
+import faceApiService from './face-api-service/face-api-service';
 import convertDataURItoBlob from './utils/convert-data-url-to-blob';
 
 document.addEventListener('DOMContentLoaded', function() {
