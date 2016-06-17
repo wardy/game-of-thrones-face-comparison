@@ -16,7 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     reader.readAsDataURL(event.target.files[0]);
   }, false);
-
-
-  console.log('document is ready. I can sleep now');
 });
