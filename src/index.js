@@ -7,7 +7,9 @@ import convertDataURItoBlob from './utils/convert-data-url-to-blob';
 document.addEventListener('DOMContentLoaded', function() {
   const fileInputElement = document.getElementById('imageInput');
 
-  console.log('calling', getCharacterFaces());
+  getCharacterFaces().then((data) => {
+    console.log('hi', data);
+  });
 
 
   fileInputElement.addEventListener('change', (event) => {
