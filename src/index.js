@@ -7,8 +7,8 @@ import convertDataURItoBlob from './utils/convert-data-url-to-blob';
 document.addEventListener('DOMContentLoaded', function() {
   const fileInputElement = document.getElementById('imageInput');
 
-  getCharacterFaces().then((data) => {
-    console.log('hi', data);
+  getCharacterFaces().then((characters) => {
+    console.log('hi', characters);
 
   fileInputElement.addEventListener('change', (event) => {
 
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
     reader.onload = function(e) {
       detectFaceLocal(convertDataURItoBlob(e.target.result))
           .then((faces) => {
-            return verify({ faceId1: faces[0].faceId, faceId2: faces[0].faceId });
-            //getBestMatchingFace(faces[0].faceId, faces);
+            return getBestMatchingFace(faces[0].faceId, characters);
+            //return verify({ faceId1: faces[0].faceId, faceId2: faces[0].faceId });
           })
           .then((match) => {
             console.log('match', match);

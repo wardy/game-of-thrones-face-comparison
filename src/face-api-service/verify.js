@@ -9,11 +9,6 @@ var myInit = {
 };
 
 export default function verify ({ faceId1, faceId2 }) {
-  let isIdentical, confidence;
-
-  const x = {body: { faceId1, faceId2 }};
-  console.log(x);
-
   return fetch('https://api.projectoxford.ai/face/v1.0/verify', Object.assign({}, myInit, {body: JSON.stringify({ faceId1, faceId2 })}))
       .then((data) => data.json())
 }

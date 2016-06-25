@@ -9,5 +9,4 @@ export default function getCharactersFaces () {
       return Object.assign(char[0], gameOfThrones.seasonOne.male[idx]);
     }));
   });
-
 }
