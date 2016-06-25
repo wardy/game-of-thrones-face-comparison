@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   getCharacterFaces().then((data) => {
     console.log('hi', data);
-  });
-
 
   fileInputElement.addEventListener('change', (event) => {
 
@@ -35,4 +33,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     reader.readAsDataURL(event.target.files[0]);
   }, false);
+  });
 });
