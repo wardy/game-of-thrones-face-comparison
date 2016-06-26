@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
       detectFaceLocal(convertDataURItoBlob(e.target.result))
           .then((faces) => {
             return getBestMatchingFace(faces[0].faceId, characters);
-            //return verify({ faceId1: faces[0].faceId, faceId2: faces[0].faceId });
           })
           .then((match) => {
             console.log('match', match);

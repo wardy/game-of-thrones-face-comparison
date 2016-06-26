@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+html {
+    background: url("https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/game-of-thrones-hd-map-for-x-hdtv-2637219.jpg?alt=media&token=3a54841b-b4c7-4fb8-b1ff-4d017c9915e6") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 30px;
+}
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.centered-content {
+    max-width: 50%;
+    width: 70%;
+    height: 100vh;
+    text-align: center;
+    background-color: #d7cbab;
+    padding: 40px 20px 20px 40px;
+}
