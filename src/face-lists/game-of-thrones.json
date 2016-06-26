@@ -1,11 +1,26 @@
 {
   "seasonOne": {
     "male": [
-      {"rooseBolton": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/roose_bolton.png?alt=media&token=9d17dba6-6a9d-4f1f-82cf-d9a89bf79cda"},
-      {"nedStark": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/ned_stark.jpg?alt=media&token=336d04ed-ba22-4cd9-ab7b-dc7efa8ccf41"},
-      {"robertBaratheon": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/robert_baratheon.jpg?alt=media&token=7c6f346a-700f-45ea-8bc9-d3ce1d6b6c19"},
-      {"tywinLannistar": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/tywin_lannister.jpg?alt=media&token=36285f4f-72d6-4ed2-9764-c40876a3bc9e"},
-      {"viserysTargaryen": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/viserys_targaryen.jpg?alt=media&token=b72fbb9b-4982-42f8-a35d-0c6f028aaf3b"},
+      {
+        "name": "rooseBolton",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/roose_bolton.png?alt=media&token=9d17dba6-6a9d-4f1f-82cf-d9a89bf79cda"
+      },
+      {
+        "name": "nedStark",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/ned_stark.jpg?alt=media&token=336d04ed-ba22-4cd9-ab7b-dc7efa8ccf41"
+      },
+      {
+        "name": "robertBaratheon",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/robert_baratheon.jpg?alt=media&token=7c6f346a-700f-45ea-8bc9-d3ce1d6b6c19"
+      },
+      {
+        "name": "tywinLannistar",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/tywin_lannister.jpg?alt=media&token=36285f4f-72d6-4ed2-9764-c40876a3bc9e"
+      },
+      {
+        "name": "viserysTargaryen",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/viserys_targaryen.jpg?alt=media&token=b72fbb9b-4982-42f8-a35d-0c6f028aaf3b"
+      }
     ]
   }
 }
