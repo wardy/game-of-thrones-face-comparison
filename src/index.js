@@ -22,12 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
             return getBestMatchingFace(faces[0].faceId, characters);
           })
           .then((comparisonResults) => {
+            console.log(comparisonResults)
             const bestMatch = comparisonResults[0];
             const mountPoint = document.getElementById('matched-character');
             mountPoint.innerHTML = `<p>Your closest matching character is...</p>
-            <img class="characters-image" src="${e.target.result}"/>
-            <img class="characters-image" src="${bestMatch.imageURL}" />
-            <p>${bestMatch.name}</p>`;
+            <div class="image-container">
+              <img class="characters-image" src="${e.target.result}"/>
+              <img class="characters-image" src="${bestMatch.imageURL}" />
+            </div>
+            <p>${bestMatch.name}</p>
+            <p>You are ${Math.round(bestMatch.confidence * 100)}% similar</p>`;
           })
           .catch((err) => {
             console.log("error", err);
