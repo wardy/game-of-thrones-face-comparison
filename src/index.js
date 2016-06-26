@@ -33,8 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>${bestMatch.name}</p>
             <p>You are ${Math.round(bestMatch.confidence * 100)}% similar</p>`;
             const contentContainer = document.querySelector('.centered-content');
-            const newClassName = `${contentContainer.className} ${bestMatch.house}`;
-            contentContainer.className = newClassName;
+            contentContainer.className = `centered-content ${bestMatch.house}`;
           })
           .catch((err) => {
             console.log("error", err);
