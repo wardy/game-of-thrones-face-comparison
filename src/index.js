@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
           .then((comparisonResults) => {
             const bestMatch = comparisonResults[0];
             const mountPoint = document.getElementById('matched-character');
-            mountPoint.innerHTML = `<img src="${bestMatch.imageURL}" />`;
+            mountPoint.innerHTML = `<p>Your closest matching character is</p>
+            <img class="characters-image" src="${e.target.result}"/>
+            <img class="characters-image" src="${bestMatch.imageURL}" />
+            <p>${bestMatch.name}</p>`;
           })
           .catch((err) => {
             console.log("error", err);

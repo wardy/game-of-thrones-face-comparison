@@ -38,3 +38,7 @@ hr {
     background-color: #d7cbab;
     padding: 40px 20px 20px 40px;
 }
+
+.characters-image {
+    max-height: 60vh;
+}
