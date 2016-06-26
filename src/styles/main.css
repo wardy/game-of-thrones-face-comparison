@@ -45,6 +45,29 @@ p {
     padding: 40px 20px 20px 40px;
 }
 
+.centered-content.house-lannister {
+    background-color: #87090A;
+    color: #f8f8ff;
+}
+
+.centered-content.house-bolton {
+    background-color: #0E0E0E;
+    color: #f8f8ff;
+}
+
+.centered-content.house-stark {
+    background-color: #D4CDB1;
+}
+
+.centered-content.house-baratheon {
+    background-color: #FECF03;
+}
+
+.centered-content.house-targaryen {
+    background-color: #AF1E23;
+    color: #f8f8ff;
+}
+
 .characters-image {
     max-width: 40%;
 }
