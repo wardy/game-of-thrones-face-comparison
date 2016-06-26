@@ -12,11 +12,11 @@ export default function getBestMatchingFace (faceId, gender) {
     return Promise.all(charactersFaces.map((currentCharacter) => {
       return verify({ faceId1: faceId, faceId2: currentCharacter.faceId });
     })).then((verficationResults) => {
-      return Promise.resolve(verficationResults.map((verificationScore, currentIndex) => {
+      return verficationResults.map((verificationScore, currentIndex) => {
         return Object.assign(charactersFaces[currentIndex], verificationScore);
-      }));
+      });
     }).then((enrichedCharacterData) => {
-      return Promise.resolve(enrichedCharacterData.sort(sortBySimilarityScore));
+      return enrichedCharacterData.sort(sortBySimilarityScore);
     });
   });
 }

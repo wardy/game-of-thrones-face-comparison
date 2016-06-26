@@ -1,7 +1,7 @@
 import gameOfThrones from '../face-lists/game-of-thrones';
 import detectFromURL from './detect-from-url'
 
-export default function getCharactersFaces (gender) {
+export default function getCharactersFaces (gender = 'male') {
   console.log('gender', gender);
   console.log(gameOfThrones.seasonOne[gender]);
   return Promise.all(gameOfThrones.seasonOne[gender].map((currentCharacter) => {
