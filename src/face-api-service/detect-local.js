@@ -9,6 +9,6 @@ var myInit = {
 };
 
 export default function detectFaces (binaryString) {
-  return fetch('https://api.projectoxford.ai/face/v1.0/detect?returnFaceId=true&returnFaceLandmarks=false', Object.assign({}, myInit, {body: binaryString}))
+  return fetch('https://api.projectoxford.ai/face/v1.0/detect?returnFaceId=true&returnFaceLandmarks=false&returnFaceAttributes=gender', Object.assign({}, myInit, {body: binaryString}))
       .then((data) => data.json())
 }

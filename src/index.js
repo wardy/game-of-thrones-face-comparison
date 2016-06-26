@@ -7,8 +7,6 @@ import convertDataURItoBlob from './utils/convert-data-url-to-blob';
 document.addEventListener('DOMContentLoaded', function() {
   const fileInputElement = document.getElementById('imageInput');
 
-  getCharacterFaces().then((characters) => {
-    console.log('characters', characters);
   fileInputElement.addEventListener('change', (event) => {
 
     const reader = new FileReader();
@@ -19,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     reader.onload = function(e) {
       detectFaceLocal(convertDataURItoBlob(e.target.result))
           .then((faces) => {
-            return getBestMatchingFace(faces[0].faceId, characters);
+            return getBestMatchingFace(faces[0].faceId, faces[0].faceAttributes.gender);
           })
           .then((comparisonResults) => {
             console.log(comparisonResults)
@@ -42,5 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     reader.readAsDataURL(event.target.files[0]);
   }, false);
-  });
 });
