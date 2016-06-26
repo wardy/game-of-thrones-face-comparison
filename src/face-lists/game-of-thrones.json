@@ -26,6 +26,28 @@
         "house": "house-targaryen",
         "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/viserys_targaryen.jpg?alt=media&token=b72fbb9b-4982-42f8-a35d-0c6f028aaf3b"
       }
+    ],
+    "female": [
+      {
+        "name": "Daenerys Targaryen",
+        "house": "house-targaryen",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/daenarys-1024.jpg?alt=media&token=39891971-0781-4419-ba5a-8d10ac6bdd85"
+      },
+      {
+        "name": "Cersei Lannister",
+        "house": "house-lannister",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/cersai.jpg?alt=media&token=1d529730-7626-4a37-8231-c3ea7fd74a6b"
+      },
+      {
+        "name": "Catelyn Stark",
+        "house": "house-stark",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/CatelynS3Promo.jpg?alt=media&token=1d2d4a42-5bd4-4613-89ce-04ab72070608"
+      },
+      {
+        "name": "Lady Melisandre",
+        "house": "lord-of-light",
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/microsoft-cognitive-services.appspot.com/o/melisandre.jpg?alt=media&token=e375e919-3db6-4c69-92cf-185e65b5ce08"
+      }
     ]
   }
 }

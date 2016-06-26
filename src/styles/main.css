@@ -68,6 +68,11 @@ p {
     color: #f8f8ff;
 }
 
+.centered-content.lord-of-light {
+    background-color: #AF1E23;
+    color: #f8f8ff;
+}
+
 .characters-image {
     max-width: 40%;
 }

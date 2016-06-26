@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const fileInputElement = document.getElementById('imageInput');
 
   getCharacterFaces().then((characters) => {
-
+    console.log('characters', characters);
   fileInputElement.addEventListener('change', (event) => {
 
     const reader = new FileReader();
