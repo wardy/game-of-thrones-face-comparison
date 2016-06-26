@@ -21,11 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
           .then((faces) => {
             return getBestMatchingFace(faces[0].faceId, characters);
           })
-          .then((match) => {
+          .then((comparisonResults) => {
+            const bestMatch = comparisonResults[0];
             const mountPoint = document.getElementById('matched-character');
-            mountPoint.innerHTML = `<p>${match}</p>`;
-
-            console.log('match', match);
+            mountPoint.innerHTML = `<img src="${bestMatch.imageURL}" />`;
           })
           .catch((err) => {
             console.log("error", err);
