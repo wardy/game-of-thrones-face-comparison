@@ -33,7 +33,7 @@ hr {
 .centered-content {
     max-width: 50%;
     width: 70%;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     background-color: #d7cbab;
     padding: 40px 20px 20px 40px;
