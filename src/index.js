@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const fileInputElement = document.getElementById('imageInput');
 
   getCharacterFaces().then((characters) => {
-    console.log('hi', characters);
 
   fileInputElement.addEventListener('change', (event) => {
 
@@ -23,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
             return getBestMatchingFace(faces[0].faceId, characters);
           })
           .then((match) => {
+            const mountPoint = document.getElementById('matched-character');
+            mountPoint.innerHTML = `<p>${match}</p>`;
+
             console.log('match', match);
           })
           .catch((err) => {
