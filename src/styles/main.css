@@ -71,3 +71,16 @@ p {
 .characters-image {
     max-width: 40%;
 }
+
+.matched-character {
+
+}
+
+.placeholder {
+    border: dashed;
+    border-color: darkgray;
+    border-width: 6px;
+    width: 50%;
+    margin: 0 auto;
+    height: 400px;
+}
