@@ -4,7 +4,7 @@
   "description": "A playground to test out some of the cognitive services API's provided by microsoft",
   "main": "index.js",
   "scripts": {
-    "start": "npm run bundle:helper && npm run build && npm run server",
+    "start": "npm i && npm run bundle:helper && npm run build && npm run server",
     "server": "node server.js",
     "server:dev": "node_modules/.bin/nodemon server.js",
     "bundle:helper": "mkdir build && cd build && touch bundle.js",
