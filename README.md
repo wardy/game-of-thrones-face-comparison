@@ -1,4 +1,4 @@
-https://codeship.com/projects/161044/status?branch=master
+![codeship-badge](https://codeship.com/projects/161044/status?branch=master)
 
 # Game of Thrones Face Comparison
 
